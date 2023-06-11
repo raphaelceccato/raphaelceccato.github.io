@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Raphael Ceccato Pauli - Portfólio</title>
+	<link rel="stylesheet" type="text/css" href="/styles.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.11/tsparticles.min.js"></script>
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+	<script>
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement({pageLanguage: 'pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+		}
+
+		let typed1 = null;
+		let typed2 = null;
+
+		window.onload = function() {
+			AOS.init({once: true, mirror: false, duration: 1200});
+
+			tsParticles.load("tsparticles", {
+				particles: {
+			        number: {
+			            value: (window.innerWidth >= 900 ? 120 : 80)
+			        },
+			        color: {
+			        	value: "#76c8ed"
+			        },
+			        move: {
+			        	enable: true
+			        },
+			        links: {
+					    enable: true,
+					    distance: (window.innerWidth >= 900 ? 150 : 100),
+					    color: "#76c8ed",
+					    opacity: 1.0,
+					    width: 1
+					}
+			    }
+			});
+
+			typed1 = new Typed('#typed1', {strings: ["Olá mundo!"], typeSpeed: 180, onComplete: (self) => { document.querySelector(".olamundo .typed-cursor").remove(); }});
+			typed2 = new Typed('#typed2', {strings: ["Raphael Ceccato Pauli"], typeSpeed: 100, onComplete: (self) => { document.querySelector(".foto-nome .typed-cursor").remove(); }});
+		}
+	</script>
+</head>
+<body>
+	<div style="position: absolute; top: 10px; left: 10px; z-index: 10">
+		<div id="google_translate_element"></div>
+	</div>
+	<div class="secao1">
+		<div class="bg1">
+			<div id="tsparticles"></div>
+		</div>
+		<div class="bg1-cidade"></div>
+		<div class="bg1-codigo"></div>
+		<div class="center-vertical">
+			<div class="olamundo" data-aos="fade" data-aos-offset="200px">
+				<span><h1 id="typed1" style="display: inline"></h1></span> <!-- Olá mundo! -->
+				<p>Seja bem-vindo(a) ao meu portifólio</p>
+			</div>
+		</div>
+		<div class="scroll-down" data-aos="fade" data-aos-offset="200px" data-aos-delay="1000"></div>
+	</div>
+	<div class="secao2" data-aos="fade">
+		<img class="foto" src="https://drive.google.com/uc?id=118OC4ylRU6gUUUURBTYTUA_RDwZRYUcV" alt="Minha foto"/>
+		<div class="foto-texto">
+			<div style="font-weight: bold; margin: 0 0 10px; color: lightgrey">QUEM SOU EU</div>
+			<div class="foto-nome"><span><p id="typed2" style="display: inline; color: white"></span></div>
+			<p style="margin-left: 2px">Entusiasta por programação e tecnologia, sempre procuro aprender e criar coisas novas</p>
+			<div style="display: flex; gap: 10px">
+				<a href="https://www.linkedin.com/in/raphael-ceccato-a26038239" class="social-linkedin"></a>
+				<a href="https://github.com/raphaelceccato" class="social-github"></a>
+			</div>
+		</div>
+	</div>
+	<div class="secao3 center-horizontal" data-aos="fade">
+		<div class="divisao"></div>
+		<h2>MEUS PROJETOS</h2>
+
+		<div class="projeto">
+			<div class="linha"><div></div></div>
+			<div class="projeto-inner">
+				<div class="projeto-img p-img-left">
+					<img src="/img/ecommerce.jpg">
+				</div>
+				<div class="projeto-text">
+					<h1>Site de e-commerce</h1>
+					<p>Um site de loja online que demonstra a utilização de um banco de dados MySQL e de design responsivo nas páginas. O site foi feito em Express seguindo o padrão MVC</p>
+					<p><b>Linguagens:</b> Javascript, HTML, CSS, SQL</p>
+					<p style="margin-bottom: 2px"><b>Tecnologias utilizadas:</b></p>
+					<div class="tecnologias">
+						<img src="/img/node.png" alt="Node.JS" style="height: 45%">
+						<img src="/img/express.png" alt="Express">
+						<img src="/img/mysql.png" alt="MySQL" style="height: 68%">
+						<img src="/img/bootstrap.png" alt="Bootstrap" style="height: 100%">
+					</div>
+					<div>
+						<p style="margin-bottom: 0">
+							<b>Links: </b>
+							<a href="">Acessar site</a>
+							<span> <b>|</b> </span>
+							<a href="https://github.com/raphaelceccato/portifolio-ecommerce">GitHub</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="projeto">
+			<div class="projeto-inner p-right">
+				<div class="projeto-img p-img-right">
+					<img src="/img/leaf.jpg">
+				</div>
+				<div class="projeto-text">
+					<h1>Leaf</h1>
+					<p>Uma pequena engine/biblioteca para jogos em C++ baseada em SDL2, OpenGL e OpenAL</p>
+					<p><b>Linguagens:</b> C++, GLSL</p>
+					<p style="margin-bottom: 2px"><b>Tecnologias utilizadas:</b></p>
+					<div class="tecnologias">
+						<img src="/img/sdl.png" alt="SDL2" style="height: 90%">
+						<img src="/img/opengl.png" alt="OpenGL" style="height: 58%">
+						<img src="/img/openal.png" alt="OpenAL" style="height: 68%">
+					</div>
+					<div>
+						<p style="margin-bottom: 0">
+							<b>Links: </b>
+							<a href="https://github.com/raphaelceccato/leaf">GitHub</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="linha"><div></div></div>
+		</div>
+	</div>
+</body>
+</html>
