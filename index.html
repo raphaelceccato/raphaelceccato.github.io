@@ -47,10 +47,14 @@
 
 			typed1 = new Typed('#typed1', {strings: ["Olá mundo!"], typeSpeed: 180, onComplete: (self) => { document.querySelector(".olamundo .typed-cursor").remove(); }});
 			observer = new IntersectionObserver(entries => { //the second typing effect should only start after it becomes visible on the screen
-				typed2 = new Typed('#typed2', {strings: ["Raphael Ceccato Pauli"], typeSpeed: 100, onComplete: (self) => { document.querySelector(".foto-nome .typed-cursor").remove(); }});
-				observer.unobserve(document.querySelector("#typed2"));
-			});
-			observer.observe(document.querySelector("#typed2"));
+				entries.forEach(entry => {
+					if (entry.intersectionRatio > 0) {
+						typed2 = new Typed('#typed2', {strings: ["Raphael Ceccato Pauli"], typeSpeed: 100, onComplete: (self) => { document.querySelector(".foto-nome .typed-cursor").remove(); }});
+						observer.unobserve(document.querySelector(".secao2"));
+					}
+				});
+			}, {rootMargin: "50px", threshold: 0.95});
+			observer.observe(document.querySelector(".secao2"));
 		}
 	</script>
 </head>
