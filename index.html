@@ -48,7 +48,7 @@
 			typed1 = new Typed('#typed1', {strings: ["Olá mundo!"], typeSpeed: 180, onComplete: (self) => { document.querySelector(".olamundo .typed-cursor").remove(); }});
 			observer = new IntersectionObserver(entries => { //the second typing effect should only start after it becomes visible on the screen
 				entries.forEach(entry => {
-					if (entry.intersectionRatio > 0) {
+					if (entry.intersectionRatio > 0.95) {
 						typed2 = new Typed('#typed2', {strings: ["Raphael Ceccato Pauli"], typeSpeed: 100, onComplete: (self) => { document.querySelector(".foto-nome .typed-cursor").remove(); }});
 						observer.unobserve(document.querySelector(".secao2"));
 					}
