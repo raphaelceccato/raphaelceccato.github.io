@@ -350,6 +350,21 @@ a:hover {
     background-size: 100%;
 }
 
+.logo-sheets {
+    width: 111px;
+    height: 27px;
+    background-image: url("/img/sheets.png");
+    background-size: 100%;
+}
+
+.logo-excel {
+    width: 26px;
+    height: 26px;
+    background-image: url("/img/excel.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 
 @media (min-width: 0) { /* >= xl */
     .hero-section h1 {
