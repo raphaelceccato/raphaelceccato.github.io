@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Raphael Ceccato Pauli - Portfólio</title>
 	<link rel="stylesheet" type="text/css" href="/styles.css">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -101,6 +101,20 @@
                         <a href="https://github.com/raphaelceccato" aria-label="Github" class="social-github"></a>
                     </div>
                 </div>
+
+				<div class="text-center mb-4">
+					<h5 class="fw-normal mt-3 mb-3">TECNOLOGIAS QUE DOMINO</h5>
+					<div class="d-flex flex-wrap gap-3 justify-content-center">
+						<img class="tech-center-icon" src="/img/javascript.png" height="32">
+						<img class="tech-center-icon" src="/img/typescript.webp" height="32">
+						<img class="tech-center-icon" src="/img/react_small.png" height="32">
+						<img class="tech-center-icon" src="/img/node2.png" height="32">
+						<img class="tech-center-icon" src="/img/python.webp" height="32">
+						<img class="tech-center-icon" src="/img/sql2.png" height="32">
+						<img class="tech-center-icon" src="/img/csharp.png" height="32">
+						<img class="tech-center-icon" src="/img/cpp.png" height="32">
+					</div>
+				</div>
             </div>
         </div>
 	</section>
@@ -112,6 +126,81 @@
         </div>
 
         <div class="projects d-flex flex-column align-items-center gap-5 pt-3">
+			<div class="project container" data-aos="fade">
+                <div class="vertical-line" aria-hidden="true"><div></div></div>
+                <div style="flex-grow: 1">
+                    <img class="project-photo" src="/img/site_coworking.png" aria-hidden="true">
+                    <h1>Site de agendamento para Coworking</h1>
+                    <p>Um site feito para o Parque Tecnológico Figueira do Rio Doce (sendo este
+						administrado na época pela Secretaria Municipal de Desenvolvimento, Ciência,
+						Tecnologia e Inovação - SMDCTI).
+						<br><br>
+						O site permite visualizar um calendário com os horários já agendados
+						da Sala de Reuniões do Coworking, além de também permitir criar novas
+						solicitações de agendamento. A análise das solicitações é feita através
+						de um sistema interno, que também está listado como um outro projeto neste
+						portfólio.
+						<br><br>
+						Além do agendamento, o site também contém páginas de fotos, de contato e
+						de informações sobre como chegar no local, com um mapa do Google Maps
+						embutido.
+						<br><br>
+						O site foi hospedado na Vercel, e o banco de dados hospedado na Neon
+					</p>
+                    <p><b>Linguagens:</b> Javascript, HTML, CSS, SQL</p>
+                    <div>
+						<p style="margin-bottom: 2px"><b>Tecnologias utilizadas:</b></p>
+						<div class="tech-used">
+							<div class="logo-node" aria-label="Node.js"></div>
+							<div class="logo-express" aria-label="Express"></div>
+							<div class="logo-postgresql" aria-label="PostgreSQL"></div>
+							<div class="logo-bootstrap" aria-label="Bootstrap"></div>
+						</div>
+					</div>
+                    <div>
+                        <p class="mb-0">
+                            <b>Links: </b>
+                            <a href="https://coworkingfigueira.vercel.app">Acessar site</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+			<div class="project container" data-aos="fade">
+				<div class="vertical-line" aria-hidden="true"><div></div></div>
+				<div style="flex-grow: 1">
+					<img class="project-photo" src="/img/sistema_coworking.png" aria-hidden="true">
+					<h1>Sistema interno de Coworking</h1>
+					<p>Um sistema feito para o Parque Tecnológico Figueira do Rio Doce (sendo este
+						administrado na época pela Secretaria Municipal de Desenvolvimento, Ciência,
+						Tecnologia e Inovação - SMDCTI).
+						<br><br>
+						Nele é possível registrar o histórico de uso do Coworking, bem como dados
+						dos usuários, com o objetivo de realizar análises posteriores sobre o
+						uso do espaço. Também é possível visualizar as solicitações de agendamento
+						feitas pelo site do Coworking (este sendo outro projeto listado neste
+						portfólio), sendo possível aprovar ou rejeitar cada solicitação, fazendo
+						com que um e-mail de resposta seja enviado para o usuário.
+						<br><br>
+						O sistema foi hospedado na Vercel, e o banco de dados hospedado na Neon. O
+						frontend foi feito utilizado React, e o backend utilizando Express.
+					</p>
+					<p><b>Linguagens:</b> Javascript, HTML, CSS, SQL</p>
+					<div>
+						<p style="margin-bottom: 2px"><b>Tecnologias utilizadas:</b></p>
+						<div class="tech-used">
+							<div class="logo-react" aria-label="React"></div>
+							<div class="logo-node" aria-label="Node.js"></div>
+							<div class="logo-express" aria-label="Express"></div>
+							<div class="logo-postgresql" aria-label="PostgreSQL"></div>
+							<div class="logo-bootstrap" aria-label="Bootstrap"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
             <div class="project container" data-aos="fade">
                 <div class="vertical-line" aria-hidden="true"><div></div></div>
                 <div style="flex-grow: 1">
@@ -119,13 +208,15 @@
                     <h1>Site de e-commerce</h1>
                     <p>Um site de loja online que demonstra a utilização de um banco de dados MySQL e de design responsivo nas páginas. O site foi feito em Express seguindo o padrão MVC</p>
                     <p><b>Linguagens:</b> Javascript, HTML, CSS, SQL</p>
-                    <p style="margin-bottom: 2px"><b>Tecnologias utilizadas:</b></p>
-                    <div class="tech-used">
-                        <div class="logo-node" aria-label="Node.js"></div>
-                        <div class="logo-express" aria-label="Express"></div>
-                        <div class="logo-mysql" aria-label="MySQL"></div>
-                        <div class="logo-bootstrap" aria-label="Bootstrap"></div>
-                    </div>
+					<div>
+						<p style="margin-bottom: 2px"><b>Tecnologias utilizadas:</b></p>
+						<div class="tech-used">
+							<div class="logo-node" aria-label="Node.js"></div>
+							<div class="logo-express" aria-label="Express"></div>
+							<div class="logo-mysql" aria-label="MySQL"></div>
+							<div class="logo-bootstrap" aria-label="Bootstrap"></div>
+						</div>
+					</div>
                     <div>
                         <p class="mb-0">
                             <b>Links: </b>
@@ -145,11 +236,13 @@
                     <h1>Leaf</h1>
 					<p>Uma pequena engine/biblioteca para jogos em C++ baseada em SDL2, OpenGL e OpenAL</p>
 					<p><b>Linguagens:</b> C++, GLSL</p>
-					<p style="margin-bottom: 2px"><b>Tecnologias utilizadas:</b></p>
-					<div class="tech-used">
-						<div class="logo-sdl2" aria-label="SDL2"></div>
-						<div class="logo-opengl" aria-label="OpenGL"></div>
-						<div class="logo-openal" aria-label="OpenAL"></div>
+					<div>
+						<p style="margin-bottom: 2px"><b>Tecnologias utilizadas:</b></p>
+						<div class="tech-used">
+							<div class="logo-sdl2" aria-label="SDL2"></div>
+							<div class="logo-opengl" aria-label="OpenGL"></div>
+							<div class="logo-openal" aria-label="OpenAL"></div>
+						</div>
 					</div>
 					<div>
 						<p style="margin-bottom: 0">
@@ -168,10 +261,12 @@
                     <h1>PuxaCEP</h1>
                     <p>Uma página que demonstra o uso de uma API REST para obter dados sobre CEPs</p>
 					<p><b>Linguagens:</b> Javascript, HTML, CSS</p>
-					<p style="margin-bottom: 2px"><b>Tecnologias utilizadas:</b></p>
-					<div class="tech-used">
-						<div class="logo-javascript" aria-label="Javascript"></div>
-						<div class="logo-bootstrap" aria-label="Bootstrap"></div>
+					<div>
+						<p style="margin-bottom: 2px"><b>Tecnologias utilizadas:</b></p>
+						<div class="tech-used">
+							<div class="logo-javascript" aria-label="Javascript"></div>
+							<div class="logo-bootstrap" aria-label="Bootstrap"></div>
+						</div>
 					</div>
 					<div>
 						<p style="margin-bottom: 0">
@@ -198,13 +293,15 @@
 						exibir caixas de mensagem
 					</p>
 					<p><b>Linguagens:</b> Javascript, SQL, HTML, CSS </p>
-					<p style="margin-bottom: 2px"><b>Tecnologias utilizadas:</b></p>
-					<div class="tech-used">
-						<div class="logo-node" aria-label="Node.JS"></div>
-						<div class="logo-express" aria-label="Express"></div>
-						<div class="logo-sequelize" aria-label="Sequelize"></div>
-						<div class="logo-sql" aria-label="Sequelize"></div>
-						<div class="logo-bootstrap" aria-label="Bootstrap"></div>
+					<div>
+						<p style="margin-bottom: 2px"><b>Tecnologias utilizadas:</b></p>
+						<div class="tech-used">
+							<div class="logo-node" aria-label="Node.JS"></div>
+							<div class="logo-express" aria-label="Express"></div>
+							<div class="logo-sequelize" aria-label="Sequelize"></div>
+							<div class="logo-sql" aria-label="Sequelize"></div>
+							<div class="logo-bootstrap" aria-label="Bootstrap"></div>
+						</div>
 					</div>
 					<div>
 						<p style="margin-bottom: 0">

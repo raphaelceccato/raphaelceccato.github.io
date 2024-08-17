@@ -166,6 +166,14 @@ a:hover {
     display: block;
 }
 
+.tech-center-icon {
+    transition: 0.5s;
+}
+
+.tech-center-icon:hover {
+    scale: 1.275;
+}
+
 .projects-section {
     width: 100%;
     margin: 50px 0 50px 0;
@@ -236,6 +244,13 @@ a:hover {
     width: fit-content;
 }
 
+.logo-react {
+    width: 58px;
+    height: 20px;
+    background-image: url("/img/react.png");
+    background-size: 100%;
+}
+
 .logo-node {
     width: 67px;
     height: 18px;
@@ -255,6 +270,21 @@ a:hover {
     height: 27px;
     background-image: url("/img/mysql.png");
     background-size: 100%;
+}
+
+.logo-postgresql {
+    width: 88px;
+    height: 28px;
+    background-image: url("/img/postgresql.png");
+    background-size: 100%;
+    /*-webkit-filter: drop-shadow(1px 1px 0 rgb(156, 156, 156))
+                drop-shadow(-1px 1px 0 rgb(156, 156, 156))
+                drop-shadow(1px -1px 0 rgb(156, 156, 156))
+                drop-shadow(-1px -1px 0 rgb(156, 156, 156));
+    filter: drop-shadow(1px 1px 0 rgb(156, 156, 156))
+            drop-shadow(-1px 1px 0 rgb(156, 156, 156))
+            drop-shadow(1px -1px 0 rgb(156, 156, 156))
+            drop-shadow(-1px -1px 0 rgb(156, 156, 156));*/
 }
 
 .logo-bootstrap {
