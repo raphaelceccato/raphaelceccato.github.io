@@ -329,6 +329,13 @@ a:hover {
     background-size: 100%;
 }
 
+.logo-python {
+    width: 26px;
+    height: 26px;
+    background-image: url("/img/python.webp");
+    background-size: 100%;
+}
+
 .logo-bootstrap {
     width: 72px;
     height: 40px;
