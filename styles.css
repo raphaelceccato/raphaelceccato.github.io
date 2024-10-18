@@ -431,16 +431,15 @@ a:hover {
     .vertical-line div {
         width: 6px !important;
     }
-}
 
-
-.lb-next {
-    background-image: url("/img/next.png") !important;
-    opacity: 100% !important;
-}
-
-
-.lb-prev {
-    background-image: url("/img/prev.png") !important;
-    opacity: 100% !important;
+    .lb-next {
+        background-image: url("/img/next.png") !important;
+        opacity: 100% !important;
+    }
+    
+    
+    .lb-prev {
+        background-image: url("/img/prev.png") !important;
+        opacity: 100% !important;
+    }
 }
