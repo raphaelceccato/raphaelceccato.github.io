@@ -350,6 +350,13 @@ a:hover {
     background-size: 100%;
 }
 
+.logo-prisma {
+    width: 50px;
+    height: 20px;
+    background-image: url("/img/prisma.png");
+    background-size: 100%;
+}
+
 .logo-sql {
     width: 47px;
     height: 22px;
