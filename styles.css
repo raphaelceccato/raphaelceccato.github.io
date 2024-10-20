@@ -336,6 +336,13 @@ a:hover {
     background-size: 100%;
 }
 
+.logo-csharp {
+    width: 26px;
+    height: 26px;
+    background-image: url("/img/csharp.png");
+    background-size: 100%;
+}
+
 .logo-bootstrap {
     width: 72px;
     height: 40px;
