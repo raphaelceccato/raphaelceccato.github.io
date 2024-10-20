@@ -340,7 +340,8 @@ a:hover {
     width: 26px;
     height: 26px;
     background-image: url("/img/csharp.png");
-    background-size: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .logo-bootstrap {
